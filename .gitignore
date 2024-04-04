@@ -1,0 +1,17 @@
+*.o
+*.a
+ddm
+Partition3d
+MeshPartition
+
+slurm-*
+
+spack-env/.spack-env
+spack-env/spack
+spack-env/modules
+spack-env/spack.lock
+spack-env/user-config
+
+src/mesh/mesh
+src/dzh.flavia.res
+src/dzh.flavia.msh
