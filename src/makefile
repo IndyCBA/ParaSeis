@@ -11,14 +11,13 @@ AR          =     ar rv
 CFLAGS    = -O2 -I../include
 FFLAGS    = $(OPTFLAGS) -fallow-argument-mismatch
 
-LIB_BLAS = -L/ccad/stack/23.09/env/base/linux-rocky8-zen2/aocc-4.1.0/amdblis-4.1-x4g3ixphz2mlye624gtmh756ktcxth4p/lib -lblis
-
-LIB_METIS = -L/home/aschachner/paraseis_env/spack/opt/spack/linux-rocky8-zen2/gcc-12.3.0/metis-5.1.0-22nqenei74oytpq2xl763tmckc5g6ldk/lib/ -lmetis
+LIB_BLAS = -lblis
+LIB_METIS = -lmetis
 
 LIB_FEPG     = ${EXT}/lib/libfepg.a
 LIB_FEPGSOLV = ${EXT}/lib/libfepgsolv.a
 
-LIB_LAPACK = -L/ccad/stack/23.09/env/base/linux-rocky8-zen2/gcc-12.3.0/amdlibflame-4.0-gcsjurkwjd3pbw7vyq4qlrztab7djmwj/lib -lflame
+LIB_LAPACK = -lflame
 
 LIB_MATH  = -lm
 
